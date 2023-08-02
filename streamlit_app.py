@@ -33,7 +33,7 @@ try:
 
 # dont run anything past here while we troubleshoot
 except URLError as e:
-streamlit.error()
+  streamlit.error()
 
                       
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
